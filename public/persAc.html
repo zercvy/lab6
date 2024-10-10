@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>личный кабинет</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-main other">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="" class="logo-img">
+            </a>
+                <div class="header-inner">
+                    <div class="header-content">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link company" href="company.html">О компании</a>
+                                </li>
+                                <li class="menu__list-item ">
+                                    <a class="menu__list-link" href="services.html">Услуги</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="news.html">Новости</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="contacts.html">Контакты</a>
+                                </li>
+                                <li class="menu__list-item active">
+                                    <a class="menu__list-link" href="#">Личный кабинет</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="burger-menu">
+                            <div class="burger-icon">&#9776;</div>
+                            <div class="burger-content">
+                                <ul>
+                                    <li><a href="company.html">О компании</a></li>
+                                    <li><a href="services.html">Услуги</a></li>
+                                    <li><a href="news.html">Новости</a></li>
+                                    <li><a href="contacts.html">Контакты</a></li>
+                                    <li><a href="persAc.html">Личный кабинет</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contacts">
+                            <img src="images/phone.svg" alt="Phone" class="phone-icon">
+                            <span class="phone-number">8 (499) 350-44-45</span>
+                            <button class="callback-button">Заказать обратный звонок</button>
+                        </div>
+                    </div>
+                </div>
+        </header>
+
+        <section class="lk">
+            <div class="container">
+                
+
+                <div class="profile-section" id="profileSection">
+                    <div class="auth-tabs">
+                        <button class="tab-button active" id="profileTab">Профиль</button>
+                        <button class="tab-button" id="ordersTab">Заказы</button>
+                    </div>
+                    <div class="content" id="profileContent">
+                        <form class="profile-form">
+                           <h2>Личный Кабинет</h2>
+                            <div class="flex-container">
+                                <input type="text" id="firstName" placeholder="Имя" required>
+                                <input type="tel" id="phone" placeholder="Мобильный телефон" required>
+                            </div>
+                            <div class="flex-container">
+                                <input type="text" id="lastName" placeholder="Фамилия" required>
+                                <input type="email" id="email" placeholder="E-mail" required>
+                            </div>
+                            <div class="flex-container">
+                                <input type="text" id="patronymic" placeholder="Отчество" required>
+                                <input type="date" id="birthdate" placeholder="Дата рождения" required>
+                            </div>
+                            <button type="submit">Сохранить изменения</button>
+                        </form>
+                    </div>
+                    
+                    <div class="content" id="ordersContent" style="display: none;">
+                        <div class="active-orders">
+                            <h3 class="section-title">Активные заказы</h3>
+                            <div class="order-status">
+                                <div class="status-item completed">
+                                    <div class="circle"></div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="status-item completed">
+                                    <div class="circle"></div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="status-item completed">
+                                    <div class="circle"></div>
+                                    <div class="line"></div>
+                                </div>
+                                <div class="status-item pending">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                            <div class="status-labels">
+                                <span>Принят</span>
+                                <span>Передан специалисту</span>
+                                <span>В работе</span>
+                                <span>Готов к выдаче</span>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-details">
+                                    <div class="order-info">
+                                        <span class="order-title">Услуга №1234567</span>
+                                        <span class="order-desc">Замена экрана на iPhone 15 Pro Max</span>
+                                    </div>
+                                    <div class="order-cost">
+                                        <span class="order-title">Стоимость</span>
+                                        <span class="order-desc">30000 руб.</span>
+                                    </div>
+                                    <div class="order-status-text">
+                                        <span class="order-title">Статус</span>
+                                        <span class="order-desc">В процессе</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-history">
+                            <h3 class="section-title">Архив</h3>
+                            <div class="order-item">
+                                <div class="order-details">
+                                    <div class="order-info">
+                                        <span class="order-title">Услуга №1234567</span>
+                                        <span class="order-desc">Замена экрана на iPhone 15 Pro Max</span>
+                                    </div>
+                                    <div class="order-cost">
+                                        <span class="order-title">Стоимость</span>
+                                        <span class="order-desc">30000 руб.</span>
+                                    </div>
+                                    <div class="order-status-text">
+                                        <span class="order-title">Статус</span>
+                                        <span class="order-desc">Готово</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-details">
+                                    <div class="order-info">
+                                        <span class="order-title">Услуга №1234567</span>
+                                        <span class="order-desc">Замена экрана на iPhone 15 Pro Max</span>
+                                    </div>
+                                    <div class="order-cost">
+                                        <span class="order-title">Стоимость</span>
+                                        <span class="order-desc">30000 руб.</span>
+                                    </div>
+                                    <div class="order-status-text">
+                                        <span class="order-title">Статус</span>
+                                        <span class="order-desc">Готово</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <div class="chat-widget" id="chatWidget">
+            <div class="chat-header" id="chatHeader">
+                <h3>Пиши нам, мы онлайн!</h3>
+                <span class="close-chat-btn" id="closeChatBtn">&times;</span>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="messages" id="messages"></div>
+                <textarea id="userMessage" placeholder="Введите ваше сообщение"></textarea>
+                <button id="sendMessageBtn">Отправить</button>
+            </div>
+        </div>
+        <button class="open-chat-btn" id="openChatBtn">Пиши нам, мы онлайн!</button>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>Компания</h4>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Карьера</a></li>
+                            <li><a href="#">Сотрудничество</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Дополнительно</h4>
+                        <ul>
+                            <li><a href="#">Реклама</a></li>
+                            <li><a href="#">Сообщить об ошибке</a></li>
+                            <li><a href="#">Условия использования</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Контакты</h4>
+                        <ul>
+                            <li><a href="#">Telegram</a></li>
+                            <li><a href="#">Вконтакте</a></li>
+                            <li><a href="#">89496589477</a></li>
+                            <li><a href="mailto:Fix.lt@gmail.com">Fix.lt@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>©2024 Fixit. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

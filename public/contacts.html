@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>News</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header-main other">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Logo" class="logo-img">
+            </a>
+            <div class="header-inner">
+                <div class="header-content">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link company" href="company.html">О компании</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="services.html">Услуги</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="news.html">Новости</a>
+                            </li>
+                            <li class="menu__list-item active">
+                                <a class="menu__list-link" href="#">Контакты</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="persAc.html">Личный кабинет</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="burger-menu">
+                        <div class="burger-icon">&#9776;</div>
+                        <div class="burger-content">
+                            <ul>
+                                <li><a href="company.html">О компании</a></li>
+                                <li><a href="services.html">Услуги</a></li>
+                                <li><a href="news.html">Новости</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                                <li><a href="persAc.html">Личный кабинет</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <img src="images/phone.svg" alt="Phone" class="phone-icon">
+                        <span class="phone-number">8 (499) 350-44-45</span>
+                        <button class="callback-button">Заказать обратный звонок</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="contact-info">
+            <div class="container">
+                <h1 class="title">Если у вас остались вопросы вы можете связаться с нами:</h1>
+                <div class="contact-details">
+                    <p><strong>По телефону:</strong> 8 (499) 350-44-45</p>
+                    <p><strong>По адресу:</strong> ул. Станиславского, 21, стр. 3</p>
+                    <div class="work-time">
+                        <p>Пн-чт с 10.00 до 21.00</p>
+                        <p>Пт-вс с 11.00 до 20.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <h2 class="title">Связаться с нами</h2>
+                <div class="contact-cards">
+                    <div class="contact-card form-card">
+                        <p>Отправьте заявку – менеджер свяжется с Вами в ближайшее время.</p>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">
+                                    <img src="images/people.svg" alt="Name Icon">
+                                    <input type="text" id="name" placeholder="Ваше имя">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">
+                                    <img src="images/phonecont.svg" alt="Phone Icon">
+                                    <input type="tel" id="phone" placeholder="Телефон">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    <img src="images/mail.svg" alt="Email Icon">
+                                    <input type="email" id="email" placeholder="E-mail">
+                                </label>
+                            </div>
+                            <button type="submit" class="submit-btn">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="contact-card social-card">
+                        <p class="talk">Удобно общаться через соцсети?</p>
+                        <p class="writeAss">Пишите нам</p>
+                        <div class="social-icons">
+                            <div class="social-icon">
+                                <img src="images/inst.svg" alt="Instagram">
+                                <span>Instagram</span>
+                            </div>
+                            <div class="social-icon">
+                                <img src="images/wats.svg" alt="WhatsApp">
+                                <span>WhatsApp</span>
+                            </div>
+                            <div class="social-icon">
+                                <img src="images/telegr.svg" alt="Telegram">
+                                <span>Telegram</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="image-section">
+            <div class="container">
+                <div class="images-container">
+                    <img src="images/imSect1.png" alt="Video thumbnail" class="video-thumbnail">
+                    <img src="images/imgSect2.png" alt="Step-by-step guide" class="guide-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="container">
+                <h1 class="title">Как добраться</h1>
+                <div class="map-section">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A49ceca7451ef04bf5ce89c9eb27ae4362cb32f7f3b2785c41b129ae08cc5c0b3&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <div class="chat-widget" id="chatWidget">
+            <div class="chat-header" id="chatHeader">
+                <h3>Пиши нам, мы онлайн!</h3>
+                <span class="close-chat-btn" id="closeChatBtn">&times;</span>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="messages" id="messages"></div>
+                <textarea id="userMessage" placeholder="Введите ваше сообщение"></textarea>
+                <button id="sendMessageBtn">Отправить</button>
+            </div>
+        </div>
+        <button class="open-chat-btn" id="openChatBtn">Пиши нам, мы онлайн!</button>
+        
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                    <h4>Компания</h4>
+                        <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Команда</a></li>
+                            <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Сотрудничество</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Дополнительно</h4>
+                        <ul>
+                            <li><a href="#">Реклама</a></li>
+                            <li><a href="#">Сообщить об ошибке</a></li>
+                            <li><a href="#">Условия использования</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Контакты</h4>
+                        <ul>
+                            <li><a href="#">Telegram</a></li>
+                            <li><a href="#">Вконтакте</a></li>
+                            <li><a href="tel:89496589477">89496589477</a></li>
+                            <li><a href="mailto:Fix.lt@gmail.com">Fix.lt@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>©2024 Fixit. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+  </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

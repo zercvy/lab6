@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Услуги</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-main other">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="" class="logo-img">
+            </a>
+            
+                <div class="header-inner">
+                    <div class="header-content">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link company" href="company.html">О компании</a>
+                                </li>
+                                <li class="menu__list-item active">
+                                    <a class="menu__list-link" href="#">Услуги</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="news.html">Новости</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="contacts.html">Контакты</a>
+                                </li>
+                                <li class="menu__list-item">
+                                    <a class="menu__list-link" href="persAc.html">Личный кабинет</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="burger-menu">
+                            <div class="burger-icon">&#9776;</div>
+                            <div class="burger-content">
+                                <ul>
+                                    <li><a href="company.html">О компании</a></li>
+                                    <li><a href="services.html">Услуги</a></li>
+                                    <li><a href="news.html">Новости</a></li>
+                                    <li><a href="contacts.html">Контакты</a></li>
+                                    <li><a href="persAc.html">Личный кабинет</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contacts">
+                            <img src="images/phone.svg" alt="Phone" class="phone-icon">
+                            <span class="phone-number">8 (499) 350-44-45</span>
+                            <button class="callback-button">Заказать обратный звонок</button>
+                        </div>
+                    </div>
+                </div>
+        </header>
+
+        
+        <!-- <nav aria-label="breadcrumb" class="breadcrumb-container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" class="breadcrumb-link" data-step="home">Услуги</a></li>
+            </ol>
+        </nav> -->
+
+
+        <section class="services">
+            <div class="container">
+                <div class="brand-menu">
+                    <button class="brand-button active" data-brand="apple">Apple</button>
+                    <button class="brand-button" data-brand="xiaomi">Xiaomi</button>
+                    <button class="brand-button" data-brand="samsung">Samsung</button>
+                    <button class="brand-button" data-brand="android">Android</button>
+                    <button class="brand-button" data-brand="consoles">Приставки</button>
+                    <button class="brand-button" data-brand="laptops">Ноутбуки</button>
+                </div>
+                <h2 id="step-title" class="title">Выбери что хочешь отремонтировать</h2>
+                <div class="product-list" data-brand="apple">
+                    <div class="product-card" data-model="iphone">
+                        <img src="images/apple/iphone15_pro_max.png" alt="iPhone">
+                        <p>iPhone</p>
+                    </div>
+                    <div class="product-card" data-model="ipad">
+                        <img src="images/apple/ipad.png" alt="iPad">
+                        <p>iPad</p>
+                    </div>
+                    <div class="product-card" data-model="applewatch">
+                        <img src="images/apple/watch.png" alt="AppleWatch">
+                        <p>AppleWatch</p>
+                    </div>
+                    <div class="product-card" data-model="macbook">
+                        <img src="images/apple/mcBook.png" alt="MacBook">
+                        <p>MacBook</p>
+                    </div>
+                </div>
+
+                <div class="model-list" data-brand="apple" data-model="iphone" style="display: none;">
+                    <div class="product-card" data-model="iphone15promax">
+                        <img src="images/apple/iphone 15 pro max.png" alt="iPhone 15 Pro Max">
+                        <p>iPhone 15 Pro Max</p>
+                    </div>
+                    <div class="product-card" data-model="iphone15pro">
+                        <img src="images/apple/iphone 15 pro.png" alt="iPhone 15 Pro">
+                        <p>iPhone 15 Pro</p>
+                    </div>
+                    <div class="product-card" data-model="iphone15plus">
+                        <img src="images/apple/iphone 15 plus.png" alt="iPhone 15 Plus">
+                        <p>iPhone 15 Plus</p>
+                    </div>
+                    <div class="product-card" data-model="iphone15">
+                        <img src="images/apple/iphone 15.png" alt="iPhone 15">
+                        <p>iPhone 15</p>
+                    </div>
+                    <div class="product-card" data-model="iphone14promax">
+                        <img src="images/apple/iphone 14 pro max.png" alt="iPhone 14 Pro Max">
+                        <p>iPhone 14 Pro Max</p>
+                    </div>
+                    <div class="product-card" data-model="iphone14pro">
+                        <img src="images/apple/iphone 14 pro.png" alt="iPhone 14 Pro">
+                        <p>iPhone 14 Pro</p>
+                    </div>
+                    <div class="product-card" data-model="iphone14plus">
+                        <img src="images/apple/iphone 14 plus.png" alt="iPhone 14 Plus">
+                        <p>iPhone 14 Plus</p>
+                    </div>
+                    <div class="product-card" data-model="iphone14">
+                        <img src="images/apple/iPhone 14 Pro.png" alt="iPhone 14">
+                        <p>iPhone 14</p>
+                    </div>
+                    <div class="product-card" data-model="iphone14pro">
+                        <img src="images/apple/iPhone 13 Pro Max.png" alt="iPhone 14 Pro">
+                        <p>iPhone 13 Pro max</p>
+                    </div>
+                    <div class="product-card" data-model="iphone14plus">
+                        <img src="images/apple/iPhone 13 Pro.png" alt="iPhone 14 Plus">
+                        <p>iPhone 13 pro</p>
+                    </div>
+                    <div class="product-card" data-model="iphone14">
+                        <img src="images/apple/iPhone 13.png" alt="iPhone 14">
+                        <p>iPhone 13</p>
+                    </div>
+                    
+                </div>
+                <div class="price-list" data-brand="apple" data-model="iphone15promax" style="display: none;">
+                    <h2>Стоимость и виды ремонта</h2>
+                    <ul>
+                        <li>
+                            <span>Диагностика iPhone 15 Pro Max</span>
+                            <span>Бесплатно</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Чистка iPhone 15 Pro Max от пыли и грязи</span>
+                            <span>1000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена стекла на iPhone 15 Pro Max</span>
+                            <span>30000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена экрана на iPhone 15 Pro Max</span>
+                            <span>60000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                    </ul>
+                    <div class="footer-note">*Стоимость услуг указана включая оригинальные запчасти и работу.</div>
+                </div>
+
+                <div class="price-list" data-brand="apple" data-model="iphone15pro" style="display: none;">
+                    <h2>Стоимость и виды ремонта</h2>
+                    <ul>
+                        <li>
+                            <span>Диагностика iPhone 15 Pro</span>
+                            <span>Бесплатно</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Чистка iPhone 15 Pro от пыли и грязи</span>
+                            <span>1000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена стекла на iPhone 15 Pro</span>
+                            <span>30000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена экрана на iPhone 15 Pro</span>
+                            <span>60000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                    </ul>
+                    <div class="footer-note">*Стоимость услуг указана включая оригинальные запчасти и работу.</div>
+                </div>
+                
+                <div class="price-list" data-brand="apple" data-model="iphone15plus" style="display: none;">
+                    <h2>Стоимость и виды ремонта</h2>
+                    <ul>
+                        <li>
+                            <span>Диагностика iPhone 15 Plus</span>
+                            <span>Бесплатно</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Чистка iPhone 15 Plus от пыли и грязи</span>
+                            <span>1000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена стекла на iPhone 15 Plus</span>
+                            <span>30000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена экрана на iPhone 15 Plus</span>
+                            <span>60000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                    </ul>
+                    <div class="footer-note">*Стоимость услуг указана включая оригинальные запчасти и работу.</div>
+                </div>
+                
+                <div class="price-list" data-brand="apple" data-model="iphone15" style="display: none;">
+                    <h2>Стоимость и виды ремонта</h2>
+                    <ul>
+                        <li>
+                            <span>Диагностика iPhone 15</span>
+                            <span>Бесплатно</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Чистка iPhone 15 от пыли и грязи</span>
+                            <span>1000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена стекла на iPhone 15</span>
+                            <span>30000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена экрана на iPhone 15</span>
+                            <span>60000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                    </ul>
+                    <div class="footer-note">*Стоимость услуг указана включая оригинальные запчасти и работу.</div>
+                </div>
+                
+                <div class="price-list" data-brand="apple" data-model="iphone14promax" style="display: none;">
+                    <h2>Стоимость и виды ремонта</h2>
+                    <ul>
+                        <li>
+                            <span>Диагностика iPhone 14 Pro Max</span>
+                            <span>Бесплатно</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Чистка iPhone 14 Pro Max от пыли и грязи</span>
+                            <span>1000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена стекла на iPhone 14 Pro Max</span>
+                            <span>30000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена экрана на iPhone 14 Pro Max</span>
+                            <span>60000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                    </ul>
+                    <div class="footer-note">*Стоимость услуг указана включая оригинальные запчасти и работу.</div>
+                </div>
+                
+                <div class="price-list" data-brand="apple" data-model="iphone14pro" style="display: none;">
+                    <h2>Стоимость и виды ремонта</h2>
+                    <ul>
+                        <li>
+                            <span>Диагностика iPhone 14 Pro</span>
+                            <span>Бесплатно</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Чистка iPhone 14 Pro от пыли и грязи</span>
+                            <span>1000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена стекла на iPhone 14 Pro</span>
+                            <span>30000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена экрана на iPhone 14 Pro</span>
+                            <span>60000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                    </ul>
+                    <div class="footer-note">*Стоимость услуг указана включая оригинальные запчасти и работу.</div>
+                </div>
+                
+                <div class="price-list" data-brand="apple" data-model="iphone14plus" style="display: none;">
+                    <h2>Стоимость и виды ремонта</h2>
+                    <ul>
+                        <li>
+                            <span>Диагностика iPhone 14 Plus</span>
+                            <span>Бесплатно</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Чистка iPhone 14 Plus от пыли и грязи</span>
+                            <span>1000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена стекла на iPhone 14 Plus</span>
+                            <span>30000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                        <li>
+                            <span>Замена экрана на iPhone 14 Plus</span>
+                            <span>60000 руб.</span>
+                            <span>Время работы: 1-3 дня</span>
+                            <span>Гарантия: 12 месяцев</span>
+                            <button>Заказать услугу</button>
+                        </li>
+                    </ul>
+                    <div class="footer-note">*Стоимость услуг указана включая оригинальные запчасти и работу.</div>
+                </div>
+                
+
+                <div class="product-list" data-brand="xiaomi">
+                    <div class="product-card" data-model="poco">
+                        <img src="images/xiaomi/POCO X5 5G.png" alt="poco">
+                        <p>poco</p>
+                    </div>
+                    <div class="product-card" data-model="redmi">
+                        <img src="images/xiaomi/Redmi Note 12.png" alt="redmi">
+                        <p>redmi</p>
+                    </div>
+                    <div class="product-card" data-model="note">
+                        <img src="images/xiaomi/Redmi Note 12.png" alt="note">
+                        <p>note</p>
+                    </div>
+                    <div class="product-card" data-model="mi">
+                        <img src="images/xiaomi/Xiaomi 13 Lite.png" alt="mi">
+                        <p>mi</p>
+                    </div>
+                </div>
+
+                <div class="product-list" data-brand="samsung">
+                    <div class="product-card" data-model="galaxy-s">
+                        <img src="images/samsung/Samsung Galaxy S24+.png" alt="Galaxy-s">
+                        <p>galaxy-s</p>
+                    </div>
+                    <div class="product-card" data-model="galaxy-z">
+                        <img src="images/samsung/samsung-galaxy-z-fold-5.png" alt="galaxy-z">
+                        <p>galaxy-z</p>
+                    </div>
+                    <div class="product-card" data-model="galaxy-m">
+                        <img src="images/samsung/samsung-galaxy-m14.png" alt="Galaxy-m">
+                        <p>Galaxy M</p>
+                    </div>
+                    <div class="product-card" data-model="galaxy-a">
+                        <img src="images/samsung/samsung-galaxy-a54.png" alt="Galaxy-A">
+                        <p>Galaxy A</p>
+                    </div>
+                </div>
+                
+                <div class="product-list" data-brand="android">
+                    <div class="product-card" data-model="onePlus">
+                        <img src="images/android/OnePlus Nord CE 4.png" alt="onePlus">
+                        <p>onePlus</p>
+                    </div>
+                    <div class="product-card" data-model="Realme">
+                        <img src="images/android/realme-12-pro-plus.png" alt="Realme">
+                        <p>Realme</p>
+                    </div>
+                    <div class="product-card" data-model="Huawei">
+                        <img src="images/android/Huawei P60 Pro .png" alt="Huawei">
+                        <p>Huawei</p>
+                    </div>
+                    <div class="product-card" data-model="Honor">
+                        <img src="images/android/honor-50.png" alt="Honor">
+                        <p>Honor</p>
+                    </div>
+                </div>
+              
+                <div class="product-list" data-brand="consoles">
+                    <div class="product-card" data-model="sony">
+                        <img src="images/consoles/ps5.png" alt="sony">
+                        <p>Sony</p>
+                    </div>
+                    <div class="product-card" data-model="xbox">
+                        <img src="images/consoles/xbox.png" alt="xbox">
+                        <p>Xbox</p>
+                    </div>
+                </div>
+
+                <div class="product-list" data-brand="laptops">
+                    <div class="product-card" data-model="asus">
+                        <img src="images/laptop/asus.png" alt="asus">
+                        <p>Asus</p>
+                    </div>
+                    <div class="product-card" data-model="aser">
+                        <img src="images/laptop/aser.png" alt="aser">
+                        <p>Aser</p>
+                    </div>
+                    <div class="product-card" data-model="del">
+                        <img src="images/laptop/dell.png" alt="del">
+                        <p>Dell</p>
+                    </div>
+                    <div class="product-card" data-model="lenovo">
+                        <img src="images/laptop/lenovo.png" alt="lenovo">
+                        <p>Lenovo</p>
+                    </div>
+                </div>
+                <!-- Добавьте другие product-list, model-list и price-list для остальных брендов и моделей -->
+            </div>
+        </section>
+        
+        <section class="news">
+            <div class="container">
+                <div class="news-cards">
+                    <div class="news-card">
+                        <h3 class="news-card-title">Скидка 20% на ремонт ноутбуков в июне</h3>
+                        <p class="news-card-description">Эта акция распространяется на все виды ремонта, включая замену экранов, восстановление работы материнских плат, замену жестких дисков и многое другое.</p>
+                        <p class="news-card-date">05 июня 2024</p>
+                    </div>
+                    <div class="news-card">
+                        <h3 class="news-card-title">Расширение услуг - новый сервис по ремонту смарт-часов</h3>
+                        <p class="news-card-description">Теперь мы предлагаем профессиональный ремонт смарт-часов различных брендов. Наши специалисты прошли обучение и готовы помочь вам с любыми проблемами, связанными с вашими смарт-часами.</p>
+                        <p class="news-card-date">07 июня 2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="contact-form" style="display: none;">
+                <div class="contact-form-container">
+                    <div class="contact-card form-card ">
+                        <p>Mенеджер свяжется с Вами в ближайшее время.</p>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">
+                                    <img src="images/people.svg" alt="Name Icon">
+                                    <input type="text" id="name" placeholder="Ваше имя">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">
+                                    <img src="images/phonecont.svg" alt="Phone Icon">
+                                    <input type="tel" id="phone" placeholder="Телефон">
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    <img src="images/mail.svg" alt="Email Icon">
+                                    <input type="email" id="email" placeholder="E-mail">
+                                </label>
+                            </div>
+                            <button type="submit" class="submit-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="chat-widget" id="chatWidget">
+            <div class="chat-header" id="chatHeader">
+                <h3>Пиши нам, мы онлайн!</h3>
+                <span class="close-chat-btn" id="closeChatBtn">&times;</span>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="messages" id="messages"></div>
+                <textarea id="userMessage" placeholder="Введите ваше сообщение"></textarea>
+                <button id="sendMessageBtn">Отправить</button>
+            </div>
+        </div>
+        <button class="open-chat-btn" id="openChatBtn">Пиши нам, мы онлайн!</button>
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>Компания</h4>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">Карьера</a></li>
+                            <li><a href="#">Сотрудничество</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Дополнительно</h4>
+                        <ul>
+                            <li><a href="#">Реклама</a></li>
+                            <li><a href="#">Сообщить об ошибке</a></li>
+                            <li><a href="#">Условия использования</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Контакты</h4>
+                        <ul>
+                            <li><a href="#">Telegram</a></li>
+                            <li><a href="#">Вконтакте</a></li>
+                            <li><a href="#">89496589477</a></li>
+                            <li><a href="mailto:Fix.lt@gmail.com">Fix.lt@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>©2024 Fixit. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+    </div>    
+    <script src="js/main.js"></script>
+</body>
+</html>
